@@ -160,23 +160,24 @@ ol {
 
 .search-form__pseudo-checkbox {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   width: 19px;
   height: 19px;
   border: 1px solid currentColor;
   text-align: center;
   background-color:transparent;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type='checkbox']:checked + span::before {
   content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
   width: 15px;
   height: 15px;
   background-color: #fff;
+
 }
 
 .content__details {
